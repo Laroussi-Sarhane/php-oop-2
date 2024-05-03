@@ -7,12 +7,7 @@ require_once __DIR__. '/DB.php';
 
 
 
-$prodotti = new Prodotti('giochi', 'cibo');
-$cibo = new Cibo ('pallina','palla','plastica', '0.200');
 
-$giochi = new Giochi('snack','cane','pesce');
-
-var_dump($cibo );
 
 
 
