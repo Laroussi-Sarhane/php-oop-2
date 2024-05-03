@@ -13,7 +13,7 @@ $database = [
             ],
             [
                 "nome" => "pallina",
-                "tipo" => "Auto",
+                "tipo" => "palla",
                 "materiale" => "plastica" ,
                 "peso" => "0.200",
 
@@ -24,12 +24,12 @@ $database = [
             [
                 "tipologia" => "snack",
                 "riferimento" => "Cane",
-                "ingredienti" => ["pesce", "anatra"]
+                "ingredienti" => "pesce",
             ],
             [
                 "tipologia" => "Croccantini",
                 "riferimento" => "Cane",
-                "ingredienti" => ["salmone", "anatra"]
+                "ingredienti" => "salmone",
             ],
             
             
