@@ -14,7 +14,7 @@ class Prodotti{
   }
 
   public function getProductInfo(){
-    return "$this->nome,$this->tipo,$this->materiale,";
+    return "$this->nome, $this->tipo, $this->materiale,";
   }
 
 }

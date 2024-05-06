@@ -2,28 +2,37 @@
 
 require_once __DIR__. '/cibo.php';
 require_once __DIR__. '/giochi.php';
-require_once __DIR__. '/prodotti.php';
 require_once __DIR__. '/DB.php';
+require_once __DIR__. '/prodotti.php';
 
-foreach($prodotti as $type ){
-  $cibo = new Cibo(
-    $prodotti["tipologia"],
-    $prodotti["riferimento"],
-    $prodotti["tipo"],
+$nuovoCibo = [];
+$nuoviGiochi = [];
 
-  )
+
+
+foreach ($prodotti as $item => $prodottiItem) {
+  foreach ($prodottiItem as $prodotti) {
+      if ($item === "cibo") {
+         
+          $cibo = new Cibo(
+              $prodotti["nome"],
+              $prodotti["tipo"],
+              $prodotti["materiale"],
+          );
+
+          $nuovoCibo[] = $cibo;
+      } elseif ($category === "toys") {
+          $giochi = new Giochi(
+              $product["tipo"],
+           
+          );
+
+        
+          $formattedToys[] = $toy;
+      }
+  }
 }
-// foreach($prodotti as $other ){
-//   $giochi = new Giochi(
-//     $prodotti["nome"],
-//     $prodotti["tipo"],
-//     $prodotti["materiale"],
-//     $prodotti["peso"],
-
-
-//   )
-}
-
+?>
 
 
 
